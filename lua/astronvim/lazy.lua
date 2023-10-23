@@ -1,3 +1,4 @@
+
 local git_version = vim.fn.system { "git", "--version" }
 if vim.api.nvim_get_vvar "shell_error" ~= 0 then
   vim.api.nvim_err_writeln("Git doesn't appear to be available...\n\n" .. git_version)
